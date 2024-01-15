@@ -100,5 +100,3 @@ function Get-Phind {
         $Selenium.Quit()
     }
 }
-
-Get-Phind "Напиши скрипт на языке PowerShell для создания TCP сокета"
