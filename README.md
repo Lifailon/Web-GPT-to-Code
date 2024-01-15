@@ -1,4 +1,4 @@
-# Web-GPT-to-Code
+# GPT-to-Code
 
 Integrating free Web version of Chat GPT to PowerShell code. The modules based on **Selenium (without using API)**.
 
@@ -14,3 +14,5 @@ To install all dependencies (browser Chromium and drivers latest version), use t
 ```PowerShell
 Invoke-Expression(New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/Lifailon/Deploy-Selenium/rsa/Deploy-Selenium-Drivers.ps1")
 ```
+
+Download the modules and place them in the default PowerShell modules directory, such as here: `$PSHOME\modules` or `$($Env:PSModulePath -split ";")[0]`.
