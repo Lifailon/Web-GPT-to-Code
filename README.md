@@ -13,21 +13,25 @@ Modules for working with **YandexGPT**, **Phind** and **LangChain** have been re
 
 ### Install
 
-To install all dependencies (browser Chromium and drivers latest version), use the command for deployment:
+- To install all dependencies (browser Chromium and drivers latest version), use the command for deployment:
+
 ```PowerShell
 Invoke-Expression(New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/Lifailon/Deploy-Selenium/rsa/Deploy-Selenium-Drivers.ps1")
 ```
 
-Download the modules and place them in the default PowerShell modules directory, such as here: `$PSHOME\modules` or `$($Env:PSModulePath -split ";")[0]`.
+- Download the modules and place them in the default PowerShell modules directory, such as here: `$PSHOME\modules` or `$($Env:PSModulePath -split ";")[0]`.
 
 ### Request example:
 
 ```PowerShell
-> Import-Module Get-LangChain
-> Get-LangChain -Chat
+Import-Module Get-LangChain
+Get-LangChain -Chat
 Enter request: Count the sum of the numbers 20 + 30
 The sum of 20 and 30 is 50.
-> Get-LangChain "Напиши PowerShell скрипт для создания TCP сокета" -OnlyCode
+```
+
+```PowerShell
+Get-LangChain "Напиши PowerShell скрипт для создания TCP сокета" -OnlyCode
 
 $ipAddress = "127.0.0.1"
 $port = 8080
