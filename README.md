@@ -25,12 +25,6 @@ Invoke-Expression(New-Object Net.WebClient).DownloadString("https://raw.githubus
 
 ```PowerShell
 Import-Module Get-LangChain
-Get-LangChain -Chat
-Enter request: Count the sum of the numbers 20 + 30
-The sum of 20 and 30 is 50.
-```
-
-```PowerShell
 Get-LangChain "Напиши PowerShell скрипт для создания TCP сокета" -OnlyCode
 
 $ipAddress = "127.0.0.1"
