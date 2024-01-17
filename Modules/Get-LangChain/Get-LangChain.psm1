@@ -6,7 +6,8 @@ function Get-LangChain {
     Examples:
     Get-LangChain -Chat
     Get-LangChain "Посчитай сумму чисел: 22+33" -Window
-    Get-LangChain "Напиши скрипт на языке PowerShell для создания TCP сокета" -OnlyCode
+    Get-LangChain "Write a PowerShell script to create a TCP socket"
+    Get-LangChain "Напиши PowerShell скрипт для создания TCP сокета" -OnlyCode
     .LINK
     https://github.com/Lifailon/GPT-to-Code
     https://chat.langchain.com
@@ -135,5 +136,3 @@ function Get-LangChain {
         $Selenium.Quit()
     }
 }
-
-Get-LangChain "сколько будет 10+20" -Window
