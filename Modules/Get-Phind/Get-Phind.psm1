@@ -1,7 +1,7 @@
 function Get-Phind {
     <#
     .SYNOPSIS
-    Module for free communication with chat GTP without using API
+    Module for free communication with ChatGTP without using API
     .DESCRIPTION
     Examples:
     Get-Phind "Посчитай сумму чисел: 22+33" -Window
@@ -82,7 +82,7 @@ function Get-Phind {
                 if (Get-LatinLetters $OutputText) {
                     # Фиксируем количество блоков ответа
                     $Count = $($Selenium.FindElements([OpenQA.Selenium.By]::ClassName("fs-5")) | Where-Object {$_.Text.Length -ne 0})[0..100].count
-                    $Selenium.FindElements([OpenQA.Selenium.By]::Name("q")).SendKeys("Ответь иначе и предоставь в ответе только код без текста описания")
+                    $Selenium.FindElements([OpenQA.Selenium.By]::Name("q")).SendKeys("Ответь иначе только код без лишнего текста описания")
                     $Selenium.FindElements([OpenQA.Selenium.By]::Name("q")).SendKeys([OpenQA.Selenium.Keys]::Enter)
                     Get-Continue
                     # Забираем ответ
