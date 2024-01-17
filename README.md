@@ -23,7 +23,7 @@ Download the modules and place them in the default PowerShell modules directory,
 ### Request example:
 
 ```PowerShell
->Import-Module Get-LangChain
+> Import-Module Get-LangChain
 > Get-LangChain -Chat
 Enter request: Count the sum of the numbers 20 + 30
 The sum of 20 and 30 is 50.
