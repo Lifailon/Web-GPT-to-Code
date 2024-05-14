@@ -1,6 +1,6 @@
 # GPT Command-line interface
 
-Alternative solution is to use **free** AI models (Chat GPT) on the command line via the PowerShell module using the web version via Selenium for direct integration into the code.
+Alternative solution is to use **free** AI models (Chat GPT) on the command line via the PowerShell module using the web version via Selenium (without using API) for direct integration into the code.
 
 Modules for working with **[Phind](https://github.com/Lifailon/gpt-cli/blob/rsa/Modules/Get-Phind/Get-Phind.psm1)**, **[LangChain](https://github.com/Lifailon/gpt-cli/blob/rsa/Modules/Get-LangChain/Get-LangChain.psm1)** and **[YandexGPT](https://github.com/Lifailon/gpt-cli/blob/rsa/Modules/Get-YaGPT/Get-YaGPT.psm1)** have been released. YaGPT has a probability of triggering captcha, Phind only works in window mode. Reading the contents of LangChain responses is done from Trace.
 
